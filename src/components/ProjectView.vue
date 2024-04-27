@@ -37,7 +37,7 @@ import Category from './Category.vue'
 import LearnMoreButton from './LearnMoreButton.vue';
 import { ref } from 'vue';
 
-const show = ref < boolean > (false);
+const show = ref<boolean>(false);
 
 function close() {
     show.value = false;
@@ -59,7 +59,7 @@ const props = defineProps({
 <style scoped>
 @font-face {
     font-family: 'PPMondwest';
-    src: url('./src/assets/PPMondwest-Regular.otf');
+    src: url('~@/assets//PPMondwest-Regular.otf');
 }
 
 .project-title {
