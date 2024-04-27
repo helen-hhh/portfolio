@@ -106,7 +106,7 @@ const props = defineProps({
 .project:hover .learn-more-button:after {
     content: 'Learn more';
     font-family: 'Helvetica Neue';
-    font-size: 1rem;
+    font-size: 0.9rem;
     font-weight: 400;
 }
 
@@ -129,6 +129,6 @@ const props = defineProps({
 
 .project-img {
     width: auto;
-    height: 13.3rem;
+    height: 12.5rem;
 }
 </style>
