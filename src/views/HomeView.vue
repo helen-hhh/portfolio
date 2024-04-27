@@ -10,16 +10,16 @@ import p11ImageSource from "../assets/gender-data-gap-01.png"
 import p12ImageSource from '../assets/gender-data-gap-02.png';
 import p21ImageSource from '../assets/ada-lovelace.png';
 import p3bgImageSource from '../assets/nadar-bg.png'
-import p31ImageSource from '/../assets/nadar-01.png';
-import p32ImageSource from '/../assets/nadar-02.png';
-import p41ImageSource from '/../assets/hidden-stories-01.png';
-import p42ImageSource from '/../assets/hidden-stories-02.png';
-import p51ImageSource from '/../assets/reise-01.png';
-import p61ImageSource from '/../assets/print-01.png';
-import p62ImageSource from '/../assets/print-03.png';
-import p63ImageSource from '/../assets/print-04.png';
-import p71ImageSource from '/../assets/creative-coding-01.png';
-import p72ImageSource from '/../assets/creative-coding-02.png';
+import p31ImageSource from '../assets/nadar-01.png';
+import p32ImageSource from '../assets/nadar-02.png';
+import p41ImageSource from '../assets/hidden-stories-01.png';
+import p42ImageSource from '../assets/hidden-stories-02.png';
+import p51ImageSource from '../assets/reise-01.png';
+import p61ImageSource from '../assets/print-01.png';
+import p62ImageSource from '../assets/print-03.png';
+import p63ImageSource from '../assets/print-04.png';
+import p71ImageSource from '../assets/creative-coding-01.png';
+import p72ImageSource from '../assets/creative-coding-02.png';
 
 const viewBgImg = ref(false);
 const viewBgImg2 = ref(false);
