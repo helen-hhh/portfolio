@@ -59,7 +59,7 @@ const props = defineProps({
 <style scoped>
 @font-face {
     font-family: 'PPMondwest';
-    src: url('<%= BASE_URL %>PPMondwest-Regular.otf');
+    src: url('/public/PPMondwest-Regular.otf');
 }
 
 .project-title {
