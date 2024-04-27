@@ -5,22 +5,21 @@ import ProjectView from '../components/ProjectView.vue'
 import GenderGapView from './GenderGapView.vue';
 import AdaLovelaceView from './AdaLovelaceView.vue'
 import Print from './Print.vue'
+import p11ImageSource from "../assets/gender-data-gap-01.png"
 
-
-const p11ImageSource = 'src/assets/gender-data-gap-01.png';
-const p12ImageSource = '/src/assets/gender-data-gap-02.png';
-const p21ImageSource = '/src/assets/ada-lovelace.png';
-const p3bgImageSource = 'src/assets/nadar-bg.png'
-const p31ImageSource = '/src/assets/nadar-01.png';
-const p32ImageSource = '/src/assets/nadar-02.png';
-const p41ImageSource = '/src/assets/hidden-stories-01.png';
-const p42ImageSource = '/src/assets/hidden-stories-02.png';
-const p51ImageSource = '/src/assets/reise-01.png';
-const p61ImageSource = '/src/assets/print-01.png';
-const p62ImageSource = '/src/assets/print-03.png';
-const p63ImageSource = '/src/assets/print-04.png';
-const p71ImageSource = '/src/assets/creative-coding-01.png';
-const p72ImageSource = '/src/assets/creative-coding-02.png';
+import p12ImageSource from '../assets/gender-data-gap-02.png';
+import p21ImageSource from '../assets/ada-lovelace.png';
+import p3bgImageSource from '../assets/nadar-bg.png'
+import p31ImageSource from '/../assets/nadar-01.png';
+import p32ImageSource from '/../assets/nadar-02.png';
+import p41ImageSource from '/../assets/hidden-stories-01.png';
+import p42ImageSource from '/../assets/hidden-stories-02.png';
+import p51ImageSource from '/../assets/reise-01.png';
+import p61ImageSource from '/../assets/print-01.png';
+import p62ImageSource from '/../assets/print-03.png';
+import p63ImageSource from '/../assets/print-04.png';
+import p71ImageSource from '/../assets/creative-coding-01.png';
+import p72ImageSource from '/../assets/creative-coding-02.png';
 
 const viewBgImg = ref(false);
 const viewBgImg2 = ref(false);
