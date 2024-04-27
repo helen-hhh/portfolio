@@ -87,8 +87,8 @@
 <script setup lang="ts">
 
 import { ref } from 'vue'
-import CategoryProject from '@/components/CategoryProject.vue';
-import BackButton from '@/components/BackButton.vue';
+import CategoryProject from '../components/CategoryProject.vue';
+import BackButton from '../components/BackButton.vue';
 
 let down = ref(false);
 let xPos = ref("50vw");

@@ -37,7 +37,7 @@ import Category from './Category.vue'
 import LearnMoreButton from './LearnMoreButton.vue';
 import { ref } from 'vue';
 
-const show = ref<boolean>(false);
+const show = ref < boolean > (false);
 
 function close() {
     show.value = false;
