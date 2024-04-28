@@ -1,11 +1,13 @@
 <script setup lang="ts">
 //images for project overview index
 import { ref } from "vue";
-import ProjectView from '../components/ProjectView.vue'
+import ProjectView from '../components/ProjectView.vue';
 import GenderGapView from './GenderGapView.vue';
-import AdaLovelaceView from './AdaLovelaceView.vue'
-import Print from './Print.vue'
-import p11ImageSource from "../assets/gender-data-gap-01.png"
+import AdaLovelaceView from './AdaLovelaceView.vue';
+import Print from './Print.vue';
+import p11ImageSource from "../assets/gender-data-gap-01.png";
+import CodingView from './CodingView.vue';
+import ReiseView from './ReiseView.vue';
 
 import p12ImageSource from '../assets/gender-data-gap-02.png';
 import p21ImageSource from '../assets/ada-lovelace.png';
@@ -67,15 +69,17 @@ Ada Lovelace" desc="An editorial design and font sketch about Ada Lovelace" year
       category_title="UX Research Illu">
     </ProjectView>
 
-    <ProjectView @mouseenter="viewBgImg7 = true" @mouseleave="viewBgImg7 = false" class="project7"
+    <ProjectView v-slot="slotProps" @mouseenter="viewBgImg7 = true" @mouseleave="viewBgImg7 = false" class="project7"
       title="Creative Coding Sketches" desc="Selection of creative coding projects made with p5.js" year="2021"
       team="Just me" tools="VSCode, p5.js" :imageSource1="p71ImageSource" :imageSource2="p72ImageSource"
       category_title="Dev Creative">
+      <CodingView @close="slotProps.close()" />
     </ProjectView>
 
-    <ProjectView @mouseenter="viewBgImg5 = true" @mouseleave="viewBgImg5 = false" class="project5"
+    <ProjectView v-slot="slotProps" @mouseenter="viewBgImg5 = true" @mouseleave="viewBgImg5 = false" class="project5"
       title="Reise ans Ende des Bettes" desc="A translation of a text into a publication and a website" year="2023"
       team="Just me" tools="VSCode, InDesign" :imageSource1="p51ImageSource" category_title="Edit Typo Dev">
+      <ReiseView @close="slotProps.close()" />
     </ProjectView>
 
     <ProjectView v-slot="slotProps" @mouseenter="viewBgImg6 = true" @mouseleave="viewBgImg6 = false" class="project6"

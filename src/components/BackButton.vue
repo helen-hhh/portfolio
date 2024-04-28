@@ -20,5 +20,6 @@
     position: absolute;
     top: 4rem;
     left: 1.25rem;
+    z-index: 3;
 }
 </style>

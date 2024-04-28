@@ -4,8 +4,10 @@
             <BackButton @click="$emit('close')"></BackButton>
         </div>
         <div class="left">
-            <img src="/src/assets/gap-placeholder.jpg" style="width: 40%; margin: 6rem;" alt="">
-            <img src="/src/assets/gap-placeholder02.jpg" style="width: 100%;" alt="">
+            <iframe src="https://player.vimeo.com/video/939547939?h=ee5dd7fdb0&autoplay=1&loop=1"
+                style="width: 100%; height: 60%; position: absolute; top: 6rem; overflow: hidden; z-index: 1;"
+                frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
+            <img src="/src/assets/gap-placeholder02.jpg" style="width: 100%; margin-top: 43rem;" alt="">
             <div style="display: flex; border: dashed 1px black;">
                 <img style="width: 50%;" src="/src/assets/gap03.png" alt="">
                 <img style="width: 50%; border-left: dashed 1px black;" src="/src/assets/gap04.jpg" alt="">
@@ -120,8 +122,8 @@ function slide(e: MouseEvent) {
 
 .back-wrapper:hover .back-button:after {
     content: 'Back';
-    font-family: 'Helvetica Neue';
-    font-size: 1rem;
+    font-family: 'Helvetica Neue, Arial';
+    font-size: 0.9rem;
     font-weight: 400;
     cursor: pointer;
 }
@@ -146,16 +148,17 @@ function slide(e: MouseEvent) {
     gap: 0;
     text-align: center;
     align-items: center;
+    position: relative;
 }
 
 .right {
     display: flex;
     flex-direction: column;
     text-align: center;
-    padding-top: 10rem;
+    padding-top: 7rem;
     width: calc(100vw - v-bind(xPos));
     background-color: #D9D9D9;
-    height: calc(100vh - 10rem);
+    height: calc(100vh - 7rem);
     overflow-y: scroll;
     min-width: 40vw;
     max-width: 80vw;
@@ -167,7 +170,7 @@ function slide(e: MouseEvent) {
     column-gap: 1rem;
     align-items: center;
     justify-content: center;
-    margin-top: 18rem;
+    margin-top: 13rem;
 }
 
 .table-container {
@@ -191,7 +194,7 @@ function slide(e: MouseEvent) {
 }
 
 .gap-project-descr {
-    font-size: 1.3rem;
+    font-size: 1.1rem;
     line-height: inherit;
     margin-top: 1rem;
 }
@@ -218,8 +221,8 @@ function slide(e: MouseEvent) {
     text-align: center;
     align-items: center;
     display: flex;
-    font-family: 'Helvetica Neue';
-    font-size: 1rem;
+    font-family: 'Helvetica Neue, Arial';
+    font-size: 0.9rem;
     font-weight: 400;
     margin: 0;
 }

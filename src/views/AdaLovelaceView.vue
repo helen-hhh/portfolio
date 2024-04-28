@@ -126,8 +126,8 @@ function slide(e: MouseEvent) {
 
 .ada-back-wrapper:hover .back-button:after {
     content: 'Back';
-    font-family: 'Helvetica Neue';
-    font-size: 1rem;
+    font-family: 'Helvetica Neue, Arial';
+    font-size: 0.9rem;
     font-weight: 400;
     cursor: pointer;
 }
@@ -154,10 +154,10 @@ function slide(e: MouseEvent) {
     display: flex;
     flex-direction: column;
     text-align: center;
-    padding-top: 10rem;
+    padding-top: 7rem;
     width: calc(100vw - v-bind(xPos));
     background-color: #D9D9D9;
-    height: calc(100vh - 10rem);
+    height: calc(100vh - 7rem);
     overflow-y: scroll;
     min-width: 40vw;
     max-width: 80vw;
@@ -172,7 +172,7 @@ function slide(e: MouseEvent) {
     column-gap: 1rem;
     align-items: center;
     justify-content: center;
-    padding: 18rem 0 3rem 0;
+    padding: 13rem 0 3rem 0;
     margin: 0 3rem 0 3rem;
     border-right: 1px dashed black;
 }
@@ -198,7 +198,7 @@ function slide(e: MouseEvent) {
 }
 
 .ada-project-descr {
-    font-size: 1.3rem;
+    font-size: 1.1rem;
     line-height: inherit;
     margin-top: 1rem;
 }
@@ -222,8 +222,8 @@ function slide(e: MouseEvent) {
     text-align: center;
     align-items: center;
     display: flex;
-    font-family: 'Helvetica Neue';
-    font-size: 1rem;
+    font-family: 'Helvetica Neue, Arial';
+    font-size: 0.9rem;
     font-weight: 400;
     margin: 0;
 }
