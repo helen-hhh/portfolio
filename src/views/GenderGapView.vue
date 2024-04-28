@@ -132,8 +132,22 @@ function slide(e: MouseEvent) {
     display: none;
 }
 
+.right {
+    -ms-overflow-style: none;
+    /* IE and Edge */
+    scrollbar-width: none;
+    /* Firefox */
+}
+
 .left::-webkit-scrollbar {
     display: none;
+}
+
+.left {
+    -ms-overflow-style: none;
+    /* IE and Edge */
+    scrollbar-width: none;
+    /* Firefox */
 }
 
 .left {

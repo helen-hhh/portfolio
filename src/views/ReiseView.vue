@@ -133,6 +133,13 @@ function slide(e: MouseEvent) {
     display: none;
 }
 
+.reise-left {
+    -ms-overflow-style: none;
+    /* IE and Edge */
+    scrollbar-width: none;
+    /* Firefox */
+}
+
 .reise-right {
     display: flex;
     flex-direction: column;
@@ -148,6 +155,13 @@ function slide(e: MouseEvent) {
 
 .reise-right::-webkit-scrollbar {
     display: none;
+}
+
+.reise-right {
+    -ms-overflow-style: none;
+    /* IE and Edge */
+    scrollbar-width: none;
+    /* Firefox */
 }
 
 .reise-categories {

@@ -137,6 +137,13 @@ function slide(e: MouseEvent) {
     display: none;
 }
 
+.print-left {
+    -ms-overflow-style: none;
+    /* IE and Edge */
+    scrollbar-width: none;
+    /* Firefox */
+}
+
 .print-right {
     display: flex;
     flex-direction: column;
@@ -152,6 +159,13 @@ function slide(e: MouseEvent) {
 
 .print-right::-webkit-scrollbar {
     display: none;
+}
+
+.print-right {
+    -ms-overflow-style: none;
+    /* IE and Edge */
+    scrollbar-width: none;
+    /* Firefox */
 }
 
 .print-categories {

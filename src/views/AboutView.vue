@@ -333,6 +333,13 @@ const hideSnow = () => {
   display: none;
 }
 
+.about-right {
+  -ms-overflow-style: none;
+  /* IE and Edge */
+  scrollbar-width: none;
+  /* Firefox */
+}
+
 .info-wrapper {
   border: dashed 1px black;
   border-bottom: 0;

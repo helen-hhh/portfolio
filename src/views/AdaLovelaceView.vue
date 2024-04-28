@@ -150,6 +150,13 @@ function slide(e: MouseEvent) {
     display: none;
 }
 
+.ada-left {
+    -ms-overflow-style: none;
+    /* IE and Edge */
+    scrollbar-width: none;
+    /* Firefox */
+}
+
 .ada-right {
     display: flex;
     flex-direction: column;
@@ -165,6 +172,13 @@ function slide(e: MouseEvent) {
 
 .ada-right::-webkit-scrollbar {
     display: none;
+}
+
+.ada-right {
+    -ms-overflow-style: none;
+    /* IE and Edge */
+    scrollbar-width: none;
+    /* Firefox */
 }
 
 .ada-categories {
