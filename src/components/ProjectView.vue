@@ -5,7 +5,8 @@
                 <div class="title-div">
                     <h1 class="project-title">{{ title }}</h1>
                     <div class="filler"></div>
-                    <LearnMoreButton @click="show = true" class="learn-more-button"></LearnMoreButton>
+                    <LearnMoreButton v-if="showLearnMore" @click="show = true" class="learn-more-button">
+                    </LearnMoreButton>
                 </div>
                 <div class="info-div">
                     <p>{{ desc }}</p>
@@ -53,6 +54,10 @@ const props = defineProps({
     team: String,
     tools: String,
     category_title: String,
+    showLearnMore: {
+        type: Boolean,
+        default: true,
+    }
 });
 </script>
 

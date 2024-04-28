@@ -8,6 +8,7 @@ import Print from './Print.vue';
 import p11ImageSource from "../assets/gender-data-gap-01.png";
 import CodingView from './CodingView.vue';
 import ReiseView from './ReiseView.vue';
+import MuseumView from './MuseumView.vue';
 
 import p12ImageSource from '../assets/gender-data-gap-02.png';
 import p21ImageSource from '../assets/ada-lovelace.png';
@@ -57,16 +58,17 @@ Ada Lovelace" desc="An editorial design and font sketch about Ada Lovelace" year
       <AdaLovelaceView @close="slotProps.close()" />
     </ProjectView>
 
-    <!-- <ProjectView @mouseenter="viewBgImg3 = true" @mouseleave="viewBgImg3 = false" class="project3" title="nadar"
-      desc="UX/UI for a start-up building a platform for satellite-powered forest monitoring" year="2023/24"
-      team="Caroline Busse, Marco Eberle" tools="Figma, VSCode, Webflow, Hotjar" category_title="Web UX Dev Research"
-      :imageSource1="p31ImageSource" :imageSource2="p32ImageSource" :bgsrc="p3bgImageSource">
-    </ProjectView> -->
-
-    <ProjectView @mouseenter="viewBgImg4 = true" @mouseleave="viewBgImg4 = false" class="project4"
+    <ProjectView v-slot="slotProps" @mouseenter="viewBgImg4 = true" @mouseleave="viewBgImg4 = false" class="project4"
       title="Hidden Stories Museum" desc="An app for visitors to save and recall their favorite museum exhibits."
       year="2022" team="Just me" tools="Figma" :imageSource1="p41ImageSource" :imageSource2="p42ImageSource"
       category_title="UX Research Illu">
+      <MuseumView @close="slotProps.close()" />
+    </ProjectView>
+
+    <ProjectView :showLearnMore="false" class="project3" title="nadar"
+      desc="UX/UI for a start-up building a platform for satellite-powered forest monitoring" year="2023/24"
+      team="Caroline Busse, Marco Eberle" tools="Figma, VSCode, Webflow, Hotjar" category_title="Web UX Dev Research"
+      :imageSource1="p31ImageSource" :imageSource2="p32ImageSource" :bgsrc="p3bgImageSource">
     </ProjectView>
 
     <ProjectView v-slot="slotProps" @mouseenter="viewBgImg7 = true" @mouseleave="viewBgImg7 = false" class="project7"
