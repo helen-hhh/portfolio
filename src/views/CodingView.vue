@@ -87,7 +87,7 @@ function slide(e: MouseEvent) {
 
 .coding-back-wrapper:hover .back-button:after {
     content: 'Back';
-    font-family: 'Helvetica Neue, Arial';
+    font-family: 'Helvetica Neue';
     font-size: 0.9rem;
     font-weight: 400;
     cursor: pointer;
@@ -185,7 +185,7 @@ function slide(e: MouseEvent) {
     text-align: center;
     align-items: center;
     display: flex;
-    font-family: 'Helvetica Neue, Arial';
+    font-family: 'Helvetica Neue';
     font-size: 0.9rem;
     font-weight: 400;
     margin: 0;
