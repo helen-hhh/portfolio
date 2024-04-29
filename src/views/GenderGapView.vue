@@ -41,18 +41,42 @@
             </div>
             <div class="gap-filler"></div>
             <div class="content">
-                <div class="gap-context" style="padding-bottom: 1rem; border-right: 1px dashed black;">
+                <div class="gap-context"
+                    style="padding-bottom: 1rem; padding-right: 1rem; padding-top: 1rem; border-right: 1px dashed black;">
                     <h5>[ Context ]</h5>
-                    <h3></h3>
-                    <p class="gap-project-descr"></p>
+                    <h3>"Invisible Women" draws attention to our unequal world that constantly lets women down and
+                        doesn't
+                        separate information by gender to take into account people's gender-specific needs and
+                        characteristics. It shows the consequences of the fact that women have not had a seat at the
+                        decision-making table for a long time </h3>
+                    <p class="gap-project-descr">Why does Google Maps have the most environmentally friendly and fastest
+                        route, but not the safest? Why are the streets cleared first in winter and then at some point
+                        later, the footpaths, public transport tracks and cycle paths are cleared of snow? Why does the
+                        Apple Watch slip on your wrist, but it sits like a perfect fit on your brother's? Why are women
+                        much more likely to be severely injured in a car accident than men?
+                        <br>
+                        All of these products and systems are designed with a male-default mindset. Caroline Criado
+                        Perez's illuminating book, "Invisible Women" sheds light on this phenomenon, revealing how
+                        historical gender data gaps have systematically disadvantaged half of the population.
+                    </p>
+                    <h3 style="margin-top: 1rem;">What is a book and what can it be?</h3>
+                    <p class="gap-project-descr">In the winter semester 2023/24, we dealt with the topic "The resistant
+                        book - positions and perspectives on publishing and bookmaking". In this context, I asked myself
+                        how a book can function in the digital space</p>
                 </div>
 
                 <div class="gap-filler" style="border-top: 1px dashed black;"></div>
                 <div class="gap-problem">
                     <div>
                         <h5>[ Problem ]</h5>
-                        <h3></h3>
-                        <p class="gap-project-descr"></p>
+                        <h3>How can I prepare a large amount of information in such a way that decision-makers can
+                            easily find the information that is relevant to their work?</h3>
+                        <p class="gap-project-descr">The book "Invisible Women" is the result of extensive research that
+                            shows how women are disadvantaged in various design disciplines. This is supported by
+                            numerous examples and statistics. With my semester project, I tried to restructure the
+                            information so that designers can efficiently find the right data to make more informed
+                            decisions.
+                        </p>
                     </div>
                     <div class="gap-small-filler"></div>
                     <div class="gap-image-container">
@@ -60,17 +84,35 @@
                         <img style="height: 100%; width: 32%;" src="/src/assets/gap08.jpg" alt="">
                         <img style="height: 100%; width: 32%;" src="/src/assets/gap-code.jpg" alt="">
                     </div>
+                    <p class="gap-project-descr"
+                        style="margin-top: 0; padding-right: 1rem; padding-top: 1rem; padding-bottom: 1rem; border-right: dashed 1px black; border-bottom: dashed 1px black;">
+                        During my
+                        process, I
+                        realized that the
+                        analogue book might not be the
+                        right format for that.
+                        As it is such a quickly changing and broad topic, I needed something expandable which is why
+                        I decided to design and implement an e-book.</p>
                 </div>
                 <div class="gap-filler"></div>
-                <div class="gap-solution">
+                <div class="gap-solution"
+                    style="padding-bottom: 1rem; padding-right: 1rem; border-bottom: dashed 1px black; border-right: dashed 1px black;">
                     <h5>[ Solution ]</h5>
-                    <h3></h3>
-                    <p class="gap-project-descr"></p>
-                    <div class="gap-small-filler"></div>
-                    <div class="gap-image-container">
-                        <img src="" style="width: 50%;" alt="">
-                    </div>
+                    <h3>I tried to translate the functionalities, use
+                        and handling of an analog book into digital, but also added the possibilities that the
+                        interactive offers.</h3>
+                    <p class="gap-project-descr">
+                        You can seamlessly navigate between chapters, mark your favorite pages, add personal
+                        annotations, and read existing, supplementary notes, enhancing the reading experience and
+                        simplifying the search for specific information.
+                        <br>
+                        Visual elements of the e-book are based on statistics, scientific data analysis and diagrams as
+                        well as overlays. This is intended to make it clear that information is not necessarily missing,
+                        but simply needs to be included in the data sets. Everything is already there. You just have to
+                        make the effort to make it visible and read it.
+                    </p>
                 </div>
+                <div class="gap-filler"></div>
                 <div class="gap-learnings">
                     <h5>[ Learnings ]</h5>
                     <h3>Research is key</h3>
@@ -190,7 +232,7 @@ function slide(e: MouseEvent) {
 }
 
 .table-container {
-    margin: 3rem 3rem 1rem 3rem;
+    margin: 3rem 3rem 0 3rem;
     display: grid;
     grid-template-columns: auto auto auto auto;
     gap: 0px;

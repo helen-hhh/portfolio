@@ -40,7 +40,12 @@
                 <div class="museum-filler"></div>
                 <div class="museum-concept" style="border-right: 1px dashed black;">
                     <h5>[ Summary ]</h5>
-                    <h3></h3>
+                    <h3>Starting with personal experiences, I wanted to explore how the
+                        museum experience can be enhanced and what role interactive exhibition design can play in this,
+                        so
+                        I designed an app concept for a fictional museum.
+
+                    </h3>
                     <p class="museum-project-descr">Whenever I leave a museum my phone gallery is cluttered with poorly
                         lit photos that I never find again when I need to recall it later. I found myself frustrated
                         with the limited ability to capture and recall my favorite exhibits. To address
@@ -58,7 +63,9 @@
                 <div class="museum-font">
                     <div>
                         <h5>[ Problem ]</h5>
-                        <h3></h3>
+                        <h3>Along the way, I listened to many different perspectives and learned a lot about the
+                            problems other people face when
+                            visiting a museum. This app tries to address the problems and find solutions for them</h3>
                         <p class="museum-project-descr">Museum visitors are frustrated by long audio guides that cover
                             topics of little interest, a lack of interactivity and by the fact that there is no
                             possibility
@@ -74,14 +81,14 @@
                 <div class="museum-filler"></div>
                 <div class="museum-visuals">
                     <h5>[ Empathize ]</h5>
-                    <h3>Secondary Research</h3>
+                    <h3>Secondary Research - learning about solutions others have already found</h3>
                     <p class="museum-project-descr">At first I went to a few museums and
                         hahadve a look at their digital products that enhance the museum experience. I visited the MAK
                         Museum in Vienna, the SMK in Copenhagen, the MdbK in Leipzig as well as the SKD in Dresden.
                         Additionally, I read “The Future of the Museum - 28 Dialogues” by András Szántó to get into the
                         topic.</p>
 
-                    <h3>User Interviews</h3>
+                    <h3>Listening to other peoples experiences and getting in touch with potential users</h3>
                     <p class="museum-project-descr">During the museum visits, I talked to some employees to gain
                         insights about what they observed how people were going
                         through museums. After that, I interviewed people with different backgrounds to get a broad
@@ -135,14 +142,14 @@
                 <div class="museum-filler"></div>
                 <div class="museum-visuals">
                     <h5>[ Lo-Fi Prototype ]</h5>
-                    <h3 style="margin-bottom: 1rem;">Key Insights of the Usability Study</h3>
+                    <h3 style="margin-bottom: 1rem;">Testing the first draft</h3>
                     <div class="museum-image-container">
                         <img src="/src/assets/lofi.png" style="width: 100%;" alt="">
                     </div>
                     <p class="museum-project-descr">Once the first version of the low-fidelity prototype in Figma was
                         complete, I
                         conducted a usability study
-                        to test its design. Below, you can find the insights I acquired through the study.</p>
+                        to test its design. Below, you can find the key insights I acquired through the study.</p>
                     <div class="museum-small-filler"></div>
                     <div class="museum-image-container">
                         <img src="/src/assets/insights.png" style="width: 100%;" alt="">

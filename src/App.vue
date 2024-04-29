@@ -80,6 +80,29 @@ onBeforeMount(() => {
       <RouterView />
     </main>
   </div>
+
+  <!-- Mobiler Platzhalter, wird nur auf screens kleiner als 768px angezeigt -->
+  <div class="mobile-placeholder">
+    <p>Helen Hausdorf</p>
+    <div class="mobile-filler">
+      <div class="mobile-filler-div"></div>
+    </div>
+    <div class="mobile-text">
+      <h1 class="mobile-h1">Please view this website
+        on a larger device</h1>
+      <p>Looks like you're browsing on a mobile device. My portfolio is not mobile-friendly (yet). Please try again on a
+        bigger screen!
+        <br>
+        <br>
+        If you have any questions or need assistance, feel free to reach out to me at <a
+          href="mailto:helen.hausdorf@gmail.com">helen.hausdorf@gmail.com</a>
+        <br>
+        <br>
+        Thank you for your understanding!
+      </p>
+    </div>
+    <div class="mobile-filler-bottom"></div>
+  </div>
 </template>
 
 
@@ -115,5 +138,57 @@ nav {
   position: fixed;
   bottom: 1.25rem;
   right: 1.25rem;
+}
+
+.mobile-placeholder {
+  display: none;
+}
+
+@media only screen and (max-width: 768px) {
+
+  /* For mobile phones: */
+  .heatmapContainer {
+    display: none;
+  }
+
+  .mobile-placeholder {
+    display: block;
+    text-align: center;
+    height: 100vh;
+    width: 100vw;
+    overflow-y: scroll;
+    padding-top: 1.25rem;
+  }
+
+  .mobile-text {
+    margin: 0 1.25rem 0 1.25rem;
+    padding: 1.25rem;
+    border-left: dashed 1px black;
+    border-bottom: dashed 1px black;
+    padding-bottom: 10vh;
+  }
+
+  .mobile-h1 {
+    font-size: 2.1rem;
+    margin-bottom: 2rem;
+  }
+
+  .mobile-filler {
+    width: 100%;
+    margin-top: 1rem;
+  }
+
+  .mobile-filler-div {
+    width: 50%;
+    height: 10vh;
+    border-right: dashed 1px black;
+  }
+
+  .mobile-filler-bottom {
+    width: calc(100% - 1.25rem);
+    height: 20vh;
+    border-right: dashed 1px black;
+    margin-right: 1.25rem;
+  }
 }
 </style>

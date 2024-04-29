@@ -93,9 +93,9 @@ a selection" desc="Selection of posters, postcards and other print media" year="
     </ProjectView>
     <footer
       style="position:relative; display: flex; flex-direction: row; margin-top: 6rem; width: 100%;justify-content: center;">
-      <p style="position: absolute; left: 0; bottom: 0.5rem;">© 2024 Helen Hausdorf. All rights reserved</p>
-      <p style="position: absolute; bottom: 0.5rem;">Coded with 🩵 and 🌞 by me</p>
-      <p style="position: absolute; right: 0; bottom: 0.5rem;">Erasmus Application EKA - Digital Product Design</p>
+      <p style="position: absolute; left: 0; bottom: 0.1rem;">© 2024 Helen Hausdorf. All rights reserved</p>
+      <p style="position: absolute; bottom: 0.1rem;">Coded with 🩵 and 🌞 by me</p>
+      <p style="position: absolute; right: 5rem; bottom: 0.1rem;">Erasmus Application EKA - Digital Product Design</p>
     </footer>
   </div>
 

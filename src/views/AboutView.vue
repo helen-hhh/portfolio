@@ -45,6 +45,16 @@ const hideSnow = () => {
           <a href="https://www.linkedin.com/in/helen-h-89876a272/" target=”_blank”> <img class="about-icon"
               src="/src/assets/linkedIn.svg" alt=""></a>
         </div>
+        <div class="legal"
+          style="display: flex; position: absolute; bottom: 0; margin-left: 1.25rem; column-gap: 1rem;">
+          <RouterLink to="/imprint">
+            <p>Imprint</p>
+          </RouterLink>
+
+          <RouterLink to="/privacy">
+            <p>Data & Privacy Policy</p>
+          </RouterLink>
+        </div>
       </div>
       <div class="about-right">
         <div class="info-wrapper" style="border-top: 0;">
@@ -258,7 +268,8 @@ const hideSnow = () => {
   border: dashed 1px black;
   border-bottom: 0;
   border-right: 0;
-  height: fit-content;
+  height: calc(100vh - 12rem);
+  position: relative;
 }
 
 .contact {
