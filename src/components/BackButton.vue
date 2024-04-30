@@ -22,4 +22,8 @@
     left: 1.25rem;
     z-index: 3;
 }
+
+.back-button:hover {
+    cursor: pointer;
+}
 </style>

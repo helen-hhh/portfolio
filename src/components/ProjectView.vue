@@ -86,6 +86,10 @@ const props = defineProps({
     padding-bottom: 2rem;
 }
 
+.project:hover {
+    cursor: pointer;
+}
+
 .meta-information {
     width: 42%;
     display: flex;
