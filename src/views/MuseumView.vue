@@ -47,7 +47,7 @@
 
                     </h3>
                     <p class="museum-project-descr">Whenever I leave a museum my phone gallery is cluttered with poorly
-                        lit photos that I never find again when I need to recall it later. I found myself frustrated
+                        lit photos that I never find again when I need to recall them later. I found myself frustrated
                         with the limited ability to capture and recall my favorite exhibits. To address
                         this problem, I developed an app for the fictional Hidden Stories Museum, which allows users to
                         tailor their museum experience to their preferences and interests. This personalized app allows
@@ -83,7 +83,7 @@
                     <h5>[ Empathize ]</h5>
                     <h3>Secondary Research - learning about solutions others have already found</h3>
                     <p class="museum-project-descr">At first I went to a few museums and
-                        hahadve a look at their digital products that enhance the museum experience. I visited the MAK
+                        had a look at their digital products that enhance the museum experience. I visited the MAK
                         Museum in Vienna, the SMK in Copenhagen, the MdbK in Leipzig as well as the SKD in Dresden.
                         Additionally, I read “The Future of the Museum - 28 Dialogues” by András Szántó to get into the
                         topic.</p>
