@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { RouterLink, RouterView } from 'vue-router';
+import { RouterLink, RouterView, onBeforeRouteLeave } from 'vue-router';
 import { onBeforeMount, onMounted, ref, watch, type Ref } from 'vue'
 import HelloWorld from './components/HelloWorld.vue';
 import ViewButton from './components/ViewButton.vue';
@@ -7,6 +7,9 @@ import PrimaryButton from './components/PrimaryButton.vue';
 import HeatmapButton from './components/HeatmapButton.vue'
 import heatmapFactory from "heatmap.js"
 import Home from './views/HomeView.vue';
+import { useRoute } from 'vue-router';
+
+const route = useRoute();
 
 //heatmap
 const heatmapContainer = ref<HTMLDivElement>();
@@ -62,6 +65,23 @@ function toggleHeatmap() {
 onBeforeMount(() => {
   heatmapInterface = null;
 })
+
+let highlightHome = ref('#EDEBEE');
+let highlightAbout = ref('none');
+
+watch(() => route.name, () => {
+
+  highlightHome.value = 'none';
+  highlightAbout.value = 'none';
+  if (route.name == "home")
+    highlightHome.value = '#EDEBEE';
+
+  if (route.name == "about")
+    highlightAbout.value = '#EDEBEE';
+
+
+
+});
 </script>
 
 <template>
@@ -69,10 +89,10 @@ onBeforeMount(() => {
     <nav>
       <p>Helen Hausdorf</p>
       <RouterLink class="view-button" to="/">
-        <ViewButton></ViewButton>
+        <ViewButton :highlight="highlightHome"></ViewButton>
       </RouterLink>
       <RouterLink class="about-button" to="/about">
-        <PrimaryButton></PrimaryButton>
+        <PrimaryButton :highlight="highlightAbout"></PrimaryButton>
       </RouterLink>
       <HeatmapButton @click="toggleHeatmap" class="heatmap-button"></HeatmapButton>
     </nav>

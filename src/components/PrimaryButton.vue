@@ -1,13 +1,24 @@
 <template>
     <div class="border-div">
         <div class="button-container">
-            <div class="button-icon">
-                <img src="/src/assets/sun-icon.svg" class="icon-design" alt="">
+            <div class="button-content">
+                <div class="button-icon">
+                    <img src="/src/assets/sun-icon.svg" class="icon-design" alt="">
+                </div>
+                <p class="button-label">About me</p>
             </div>
-            <p class="button-label">About me</p>
         </div>
     </div>
 </template>
+
+<script setup>
+
+const props = defineProps({
+    highlight: String
+})
+
+
+</script>
 
 <style scoped>
 .border-div {
@@ -40,13 +51,22 @@
     background-color: rgba(255, 255, 255, 0.2);
     padding: 0.3rem;
     border-radius: 1.8rem;
-    display: flex;
-    align-items: center;
     -webkit-backdrop-filter: blur(5px);
     backdrop-filter: blur(5px);
-    column-gap: 0.7rem;
+}
+
+.button-content {
+    border-radius: 1.8rem;
+    display: flex;
+    align-items: center;
+    column-gap: 0.5rem;
     width: max-content;
-    padding-right: 1.2rem;
+    padding-right: 1rem;
+    background-color: v-bind(highlight);
+}
+
+.button-content:hover {
+    background-color: #EDEBEE;
 }
 
 .button-icon {

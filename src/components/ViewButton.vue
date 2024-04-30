@@ -1,8 +1,10 @@
 <template>
     <div class="border-div">
         <div class="button-container">
-            <div class="button-index">
-                <img src="/src/assets/index-icon.svg" class="icon-design" alt="">
+            <div class="view-button-content">
+                <div class="view-button-icon">
+                    <img src="/src/assets/index-icon.svg" class="icon-design" alt="">
+                </div>
                 <p class="button-label">Index</p>
             </div>
             <!-- <div class="button-graph">
@@ -11,6 +13,12 @@
         </div>
     </div>
 </template>
+
+<script setup>
+const props = defineProps({
+    highlight: String
+})
+</script>
 
 <style scoped>
 .border-div {
@@ -43,28 +51,33 @@
     background-color: rgba(255, 255, 255, 0.2);
     padding: 0.3rem;
     border-radius: 1.8rem;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
     -webkit-backdrop-filter: blur(5px);
     backdrop-filter: blur(5px);
-    width: max-content;
-    column-gap: 0.3rem;
 }
 
-.button-index {
+.view-button-content {
+    border-radius: 1.8rem;
+    display: flex;
+    align-items: center;
+    column-gap: 0.5rem;
+    width: max-content;
+    padding-right: 1rem;
+    background-color: v-bind(highlight);
+}
+
+.view-button-content:hover {
     background-color: #EDEBEE;
-    width: fit-content;
+}
+
+.view-button-icon {
+    background-color: #EDEBEE;
+    width: 3rem;
     height: 3rem;
-    column-gap: 0.7rem;
     border-radius: 1.5rem;
     text-align: center;
     display: flex;
-    flex-direction: row;
     align-items: center;
     justify-content: center;
-    padding-right: 1.2rem;
-    padding-left: 0.85rem;
 }
 
 .button-graph {
